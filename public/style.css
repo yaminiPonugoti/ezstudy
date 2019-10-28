@@ -1,0 +1,17 @@
+/* extract from public/style.css */
+
+:root {
+    --logo-font: "Share Tech Mono", monospace;
+    --header-font: "Raleway", sans-serif;
+    --core-font: "Merriweather Sans", sans-serif;
+  
+    --primary: #ffffff;
+    --secondary: #2a3747;
+  
+    --highlight: #fa4141;
+  
+    --ui-shawdow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06),
+      0 1px 10px 0 rgba(0, 0, 0, 0.08);
+    fill: rgba(0, 0, 0, 0.54);
+    --ui-shawdow-border: 1px solid rgba(0, 0, 0, 0.14);
+  }
