@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'welcome.html'));
 });
 app.get('/login', function (req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'login.html'));
 });
 
 app.listen(port, () => {
