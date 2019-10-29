@@ -1,18 +1,25 @@
 // // index.js
 
+const http = require('http');
 const path = require("path");
 const express = require("express");
 
 const app = express();
 const port = process.env.PORT || "8000";
+var router = express.Router();
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+const util = require('util');
+var ejs = require('ejs');
+var bodyParser = require('body-parser');
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
+app.set("view engine", "ejs");
 
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get("/", (req, res) => {
-  res.render("index", { title: "Home" });
+app.get('/welcome', function (req, res, html) {
+  res.sendFile(path.join(__dirname + '/welcome.html'));
 });
 
 app.listen(port, () => {
